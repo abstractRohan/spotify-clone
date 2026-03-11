@@ -349,6 +349,38 @@ a {
     margin-top: -6px;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-icon {
+    padding-left: 0.5rem;
+}
+
+.volume-bar {
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.volume-bar::-webkit-slider-runnable-track {
+    background-color: white;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+.volume-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
 @media (max-width: 1000px) {
     .hide {
         display: none;
